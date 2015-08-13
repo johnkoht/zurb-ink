@@ -1,0 +1,123 @@
+/* Buttons */
+
+table
+  &.button, &.tiny-button, &.small-button, &.medium-button, &.large-button
+    width: 100%
+    overflow: hidden
+  
+  &.button td, &.tiny-button td, &.small-button td, &.medium-button td, &.large-button td
+    display: block
+    width: auto !important
+    text-align: center
+    background: $button-default-bg
+    border: 1px solid $button-default-border
+    color: $button-default-color
+    padding: 8px 0
+  
+  &.tiny-button td
+    padding: 5px 0 4px
+  
+  &.small-button td
+    padding: 8px 0 7px
+  
+  &.medium-button td
+    padding: 12px 0 10px
+  
+  &.large-button td
+    padding: 21px 0 18px
+  
+  &.button td a, &.tiny-button td a, &.small-button td a, &.medium-button td a, &.large-button td a
+    font-weight: $button-font-weight
+    text-decoration: none
+    font-family: $button-font-family
+    color: $button-default-color
+    font-size: $button-font-size
+  
+  &.tiny-button td a
+    font-size: 12px
+    font-weight: normal
+  
+  &.small-button td a
+    font-size: $button-font-size
+  
+  &.medium-button td a
+    font-size: $button-font-size * 1.25
+  
+  &.large-button td a
+    font-size: $button-font-size * 1.5
+  
+  &.button
+    &:hover td, &:visited td, &:active td
+      background: darkent($button-default-bg, 10%) !important
+    &:hover td a, &:visited td a, &:active td a
+      color: $button-default-color !important
+    &:hover td
+      background: darken($button-default-bg, 10%) !important
+  
+  &.tiny-button:hover td, &.small-button:hover td, &.medium-button:hover td, &.large-button:hover td
+    background: darken($button-default-bg, 10%) !important
+  
+  &.button
+    &:hover td a, &:active td a, td a:visited
+      color: $button-default-color !important
+  
+
+  // Button size variations
+  &.tiny-button
+    &:hover td a, &:active td a, td a:visited
+      color: $button-default-color !important
+  
+  &.small-button
+    &:hover td a, &:active td a, td a:visited
+      color: $button-default-color !important
+  
+  &.medium-button
+    &:hover td a, &:active td a, td a:visited
+      color: $button-default-color !important
+  
+  &.large-button
+    &:hover td a, &:active td a, td a:visited
+      color: $button-default-color !important
+  
+
+  // Button style variations
+  &.secondary
+    td
+      background: $button-secondary-bg
+      border-color: $button-secondary-border
+      color: $button-secondary-color
+      a
+        color: $button-secondary-color
+    &:hover td
+      background: darken($button-secondary-bg, 10%) !important
+      color: $button-secondary-color
+      a
+        color: $button-secondary-color !important
+    td a:visited, &:active td a
+      color: $button-secondary-color !important
+  
+  &.success
+    td
+      background: $button-success-bg
+      border-color: $button-success-border
+    &:hover td
+      background: $button-success-color !important
+  
+  &.alert
+    td
+      background: $button-alert-bg
+      border-color: $button-alert-border
+    &:hover td
+      background: $button-alert-color !important
+  
+
+  // Button radius/rounding styles
+  &.radius td
+    -webkit-border-radius: 3px
+    -moz-border-radius: 3px
+    border-radius: 3px
+  
+  &.round td
+    -webkit-border-radius: 500px
+    -moz-border-radius: 500px
+    border-radius: 500px

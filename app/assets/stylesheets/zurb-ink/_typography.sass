@@ -1,0 +1,58 @@
+/* Typography */
+
+body, table.body, h1, h2, h3, h4, h5, h6, p, td
+  color: $base-color
+  font-family: $font-family-base
+  font-weight: $font-weight-base
+  padding: 0
+  margin: 0
+  text-align: left
+  line-height: $line-height-base
+
+h1, h2, h3, h4, h5, h6
+  word-break: normal
+
+h1
+  font-size: $h1-font-size
+
+h2
+  font-size: $h2-font-size
+
+h3
+  font-size: $h3-font-size
+
+h4
+  font-size: $h4-font-size
+
+h5
+  font-size: $h5-font-size
+
+h6
+  font-size: $h6-font-size
+
+body, table.body, p, td
+  font-size: $font-size-base
+  line-height: $line-height-base
+
+p
+  &.lead, &.lede, &.leed
+    font-size: $lead-font-size
+    line-height: $lead-line-height
+  margin-bottom: 10px
+
+small
+  font-size: $small-font-size
+
+a
+  color: $link-color
+  text-decoration: none
+  &:hover, &:active
+    color: darken($link-color, 10%) !important
+  &:visited
+    color: darken($link-color, 10%) !important
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+  color: $header-link-color
+
+h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active, h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited
+  color: $header-link-color !important
