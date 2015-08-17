@@ -1,8 +1,6 @@
 # Zurb::Ink
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/zurb/ink`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Easily add Zurb's Ink email framework to your rails projects. 
 
 ## Installation
 
@@ -22,7 +20,29 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Using Ink is easy. All of the core styles have been converted to sass and are accessible from your rails project. 
+
+#### Add the stylesheet
+To get started, you'll need to add the `zurb-ink` styles to your mailer.sass:
+
+```sass
+# mailer.sass
+@import 'zurb-ink'
+...
+```
+
+This will import all of Ink into your stylesheet. Optionally, you could pick and choose the ones you want by importing them each in your stylesheet:
+
+```sass
+# mailer.sass
+@import 'buttons'
+@import 'grid'
+@Import 'scaffolding'
+...
+```
+
+#### Set your variables
+By default, Ink uses some of Foundation's default values for color, etc. This gem abstracts most of those variables into a `variables.sass` that you can override. You can override all or just some of these, take a look at the [variables.sass](https://github.com/johnkoht/zurb-ink/blob/master/app/assets/stylesheets/zurb-ink/_variables.sass) for more details.
 
 ## Development
 
